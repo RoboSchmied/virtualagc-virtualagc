@@ -10,7 +10,7 @@ NOTE: There is a separate Github repository H=800 stuff, including
 documentation, and (eventually) tools. It's at
 https://github.com/jimlawton/h800.
 
-Endianess
+Endianness
 ---------
 
 The Hx800 family of machines are a bit strange by modern standards. They are 48-bit memory machines with 16-bit or 32-bit register widths (depending on model/configuration). Data path is 48 bits wide. Memory address space is word (48-bit) oriented rather than byte-oriented. Memory address range however is determined by register width. For the base H800 machines (16-bit register width), the maximum addressable memory is 2^15, or 32768 48-bit words. For fully-configured H1800 machines, the maximum addressable memory is 2^16, or 65536 48-bit words. This is achieved by adding an extra "array bit" to the special registers, and adding instructions (EBA, EBS) to manipulate the array bits.
@@ -20,7 +20,7 @@ The architecture is big-endian (sorta). Bit 1 is the MSB and bit N is the LSB. S
  01 02 03 ................... 46 47 48
  MSB                               LSB
 
-However, there is no sub-48-bit access to memory, so the issue of endianess doesn't really apply.
+However, there is no sub-48-bit access to memory, so the issue of endianness doesn't really apply.
 
 
 Instruction Set

@@ -113,7 +113,7 @@ ENet works on Windows and any other Unix or Unix-like platform
 providing a BSD sockets interface. The library has a small and stable
 code base that can easily be extended to support other platforms and
 integrates easily.  ENet makes no assumptions about the underlying
-platform's endianess or word size.
+platform's endianness or word size.
 
 @section Freedom Freedom
 
